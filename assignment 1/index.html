@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" id="home">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Portfolio - Ayesha Arif</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <h1>Ayesha Arif</h1>
+            <p>Sociology & English Graduate | Aspiring Professional</p>
+        </div>
+        <!-- Note: Consider updating this to a relative path like "assets/ayesha.jpeg" for GitHub deployment -->
+        <img src="image.png" alt="Professional headshot of Ayesha Arif" class="profile-img">
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Container to easily organize layout blocks -->
+    <main class="main-container">
+        <!-- About Me -->
+        <section id="about" class="section-card">
+            <h2>About Me</h2>
+            <p>
+                I completed my BS in Sociology and English (Advanced) from Benazir University in 2011. 
+                My academic journey began with intermediate studies at Government Girls Degree College, Hayatabad Phase 7, 
+                followed by schooling at University Model School, Peshawar. 
+                After marriage, I experienced a significant gap in my studies, but now I am motivated to restart my learning path. 
+                I plan to pursue professional courses to build new skills and advance my career in the UK, 
+                combining my academic foundation with fresh opportunities for growth.
+            </p>
+        </section> <!-- Fixed missing closing tag -->
+
+        <!-- Skills -->
+        <section id="skills" class="section-card">
+            <h2>Skills</h2>
+            <div class="skills-wrapper">
+                <div class="skills-category">
+                    <h3>Technical Skills</h3>
+                    <ul>
+                        <li>MS Word</li>
+                        <li>MS Office</li>
+                        <li>Canva Design</li>
+                        <li>HTML & CSS</li>
+                    </ul>
+                </div>
+                <div class="skills-category">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Communication</li>
+                        <li>Problem-Solving</li>
+                        <li>Leadership</li>
+                        <li>Teamwork</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="section-card">
+            <h2>Education</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th rowspan="2">Degree</th>
+                            <th colspan="2">Institute & Session</th>
+                            <th rowspan="2">CGPA/Percentage</th>
+                        </tr>
+                        <tr>
+                            <th>Institute</th>
+                            <th>Session</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>BS Sociology & English (Advanced)</td>
+                            <td>Benazir University</td>
+                            <td>2007–2011</td>
+                            <td>Completed</td>
+                        </tr>
+                        <tr>
+                            <td>Intermediate (Pre-Medical)</td>
+                            <td>Govt Girls Degree College, Hayatabad Phase 7</td>
+                            <td>2005–2007</td>
+                            <td>Completed</td>
+                        </tr>
+                        <tr>
+                            <td>Matriculation</td>
+                            <td>University Model School, Peshawar</td>
+                            <td>2003–2005</td>
+                            <td>Completed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="section-card">
+            <h2>Projects</h2>
+            <div class="projects-gallery">
+                <div class="project-item">
+                    <h3>Critical Thinking and Time Management</h3>
+                    <p>A Coursera course focused on enhancing analytical skills, structured decision-making, and effective time management strategies.</p>
+                    <a href="https://www.coursera.org" target="_blank" class="btn-link">View Credential</a>
+                </div>
+
+                <div class="project-item">
+                    <h3>Exploring Business Environment</h3>
+                    <p>A Coursera specialization exploring global business trends, organizational structures, and environmental factors influencing business success.</p>
+                    <a href="https://www.coursera.org" target="_blank" class="btn-link">View Credential</a>
+                </div>
+            </div>
+            <!-- Removed video iframe per strict instructions -->
+        </section>
+
+        <!-- Contact Form -->
+        <section id="contact" class="section-card">
+            <h2>Contact Me</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" value="Ayesha Arif">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" value="usefulcollection1@gmail.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+                </div>
+
+                <div class="form-group-row">
+                    <label>Gender:</label>
+                    <label class="radio-label"><input type="radio" name="gender" value="Male"> Male</label>
+                    <label class="radio-label"><input type="radio" name="gender" value="Female"> Female</label>
+                </div>
+
+                <div class="form-group-row">
+                    <label>Skills:</label>
+                    <label class="checkbox-label"><input type="checkbox" name="skill" value="Word"> Word</label>
+                    <label class="checkbox-label"><input type="checkbox" name="skill" value="Design"> Design</label>
+                    <label class="checkbox-label"><input type="checkbox" name="skill" value="Office"> MS Office</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="country">Country:</label>
+                    <select id="country" name="country">
+                        <option>Pakistan</option>
+                        <option>UK</option>
+                        <option>USA</option>
+                    </select>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="submit" class="btn-submit">Submit</button>
+                    <button type="reset" class="btn-reset">Reset</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Ayesha Arif</p>
+        <p>Email: usefulcollection1@gmail.com | 
+           <a href="https://www.linkedin.com/in/palwasha-a-a699aa302/" target="_blank">LinkedIn</a> | 
+           <a href="https://github.com/palwasha-arif" target="_blank">GitHub</a></p>
+        <p><a href="#home" class="top-link">Back to Top</a></p>
+    </footer>
+
+</body>
+</html>
