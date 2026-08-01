@@ -1,17 +1,17 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 
+const cities = {
+  Peshawar: { lat: 34.01, lon: 71.54 },
+  Islamabad: { lat: 33.69, lon: 73.04 },
+  Lahore: { lat: 31.58, lon: 74.36 },
+};
+
 function App() {
   const [city, setCity] = useState("Islamabad");
   const [weather, setWeather] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-
-  const cities = {
-    Peshawar: { lat: 34.01, lon: 71.54 },
-    Islamabad: { lat: 33.69, lon: 73.04 },
-    Lahore: { lat: 31.58, lon: 74.36 },
-  };
 
   useEffect(() => {
     const fetchWeather = async () => {
